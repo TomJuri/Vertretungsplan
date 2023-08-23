@@ -4,25 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        color: white;
+        font-family: 'Roboto', sans-serif
+    }
+}
+
 @layer components {
-    .asg-text {
-        @apply text-sm md:text-xl text-white font-roboto;
+    .center-content {
+        @apply flex justify-center items-center;
     }
-    .asg-text-big {
-        @apply text-xl md:text-2xl text-white font-roboto;
+
+    .desktop-dropdown-item {
+        @apply bg-slate-700 p-2 block text-sm hover:bg-gray-100 hover:text-gray-900 rounded-md;
     }
-    .date-display {
-        @apply bg-black pt-2 text-center asg-text-big rounded-bl-2xl md:rounded-br-2xl;
-    }
+
     .desktop-search {
         @apply flex items-center hover:border-2 rounded-lg border-cyan-400;
     }
-    .desktop-only-center {
-        @apply hidden md:flex md:items-center md:justify-center;
-    }
 
     .table-row-default {
-        @apply border-gray-500 asg-text text-center;
+        @apply border-gray-500 text-center;
     }
     .table-row-a {
         @apply border-b-[1px] border-r-[1px] table-row-default;
