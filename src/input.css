@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .asg-text {
+        @apply text-sm md:text-xl text-white font-roboto;
+    }
+    .asg-text-big {
+        @apply text-xl md:text-2xl text-white font-roboto;
+    }
+    .date-display {
+        @apply bg-black pt-2 text-center asg-text-big rounded-bl-2xl md:rounded-br-2xl;
+    }
+    .desktop-search {
+        @apply flex items-center hover:border-2 rounded-lg border-cyan-400;
+    }
+    .desktop-only-center {
+        @apply hidden md:flex md:items-center md:justify-center;
+    }
+
+    .table-row-default {
+        @apply border-gray-500 asg-text text-center;
+    }
+    .table-row-a {
+        @apply border-b-[1px] border-r-[1px] table-row-default;
+    }
+    .table-row-b {
+        @apply border-b-[1px] table-row-default;
+    }
+    .table-row-c {
+        @apply border-r-[1px] table-row-default;
+    }
+}
