@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "deploy": "npx tailwindcss -i ./src/input.css -o ./dist/style.css && cp ./src/* ./dist/ && rm ./dist/input.css && sed -i 's/\\/dist\\/style.css/style.css/g' dist/index.html"
+    "deploy": "npx tailwindcss -i ./src/input.css -o ./dist/style.css && cp ./src/* ./dist/ && rm ./dist/input.css && sed -i 's/\\/dist\\/style.css/style.css/g' dist/index.html",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
   },
   "devDependencies": {
     "prettier": "^3.0.2",
