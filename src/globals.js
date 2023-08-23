@@ -1,0 +1,2 @@
+window.dates = []
+window.selectedDate = ""
