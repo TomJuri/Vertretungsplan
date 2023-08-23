@@ -1,5 +1,5 @@
 function updateCurrentTime() {
-    const targetDate = new Date("2023-09-02 15:30:00");
+    const targetDate = new Date("2023-10-02 15:30:00");
     const currentDate = new Date();
     const timeDifference = targetDate - currentDate;
 
