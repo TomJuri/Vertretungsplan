@@ -33,7 +33,4 @@
     .table-row-b {
         @apply border-b-[1px] table-row-default;
     }
-    .table-row-c {
-        @apply border-r-[1px] table-row-default;
-    }
 }

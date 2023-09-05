@@ -1,2 +1,0 @@
-window.dates = []
-window.selectedDate = ""
